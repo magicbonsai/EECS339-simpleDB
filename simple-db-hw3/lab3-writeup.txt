@@ -1,0 +1,18 @@
+Lab3 Writeup
+Alex Zhu
+
+This lab is finished mostly except for JoinOptimizer; it doesn't pass the tests but will let the QueryTest system tests pass.  My logic for the code and writing for orderJoins followed the syntax and structure as laid out by the lab3 outline.  Everything else concerning TableStats and IntHistogram were good and, while harder to implement, were easier to debug.  
+
+There were no changes to the given API.  I was struggling at first to use the solution code from lab 2, given the DbIterator/OpIterator nomenaclature discrepencies.  
+
+One of my approaches for the implementations was as follows: 
+
+For Tablestats, 
+
+Implement helper functions to find all mins and maxs, and to populate the histograms.
+
+Afterwards, to iterator through all Fields in tupleDesc and creating and putting Histograms of type Int or String based on fieldType.
+
+I've spent around 1 week and a half on the lab.  
+
+  
